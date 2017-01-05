@@ -1,0 +1,17 @@
+development:
+  clients:
+    default:
+      database: geo_tm_dev
+      hosts: ["db:27017"]
+
+test:
+  clients:
+    default:
+      database: geo_tm_test
+      hosts: ["db:27017"]
+
+production:
+  clients:
+    default:
+      database: geo_tm_prod
+      hosts: ["db:27017"]

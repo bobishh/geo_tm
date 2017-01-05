@@ -1,0 +1,25 @@
+current directory: /bundle/ruby/2.3.0/gems/bson-4.2.1/ext/bson
+/usr/local/bin/ruby -r ./siteconf20161228-1-1gs39f3.rb extconf.rb
+creating Makefile
+
+current directory: /bundle/ruby/2.3.0/gems/bson-4.2.1/ext/bson
+make "DESTDIR=" clean
+
+current directory: /bundle/ruby/2.3.0/gems/bson-4.2.1/ext/bson
+make "DESTDIR="
+compiling bson_native.c
+In file included from bson_native.c:21:0:
+native-endian.h:145:17: warning: '__bson_uint32_swap_slow' defined but not used [-Wunused-function]
+ static uint32_t __bson_uint32_swap_slow(uint32_t v)
+                 ^
+native-endian.h:169:17: warning: '__bson_uint64_swap_slow' defined but not used [-Wunused-function]
+ static uint64_t __bson_uint64_swap_slow(uint64_t v)
+                 ^
+native-endian.h:196:15: warning: '__bson_double_swap_slow' defined but not used [-Wunused-function]
+ static double __bson_double_swap_slow(double v)
+               ^
+linking shared-object bson_native.so
+
+current directory: /bundle/ruby/2.3.0/gems/bson-4.2.1/ext/bson
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bson_native.so ./.gem.20161228-1-yrrjmn
